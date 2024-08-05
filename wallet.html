@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exchange-Wallet </title>
+    <link rel="icon" href="./assets/images/fav.png" type="png">
+    <!--Bootstrap Css-->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <!--FontAwsome Css-->
+    <link rel="stylesheet" href="./assets/css/fontawesome-free-5.15.4-web/css/all.min.css">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <!-- slickslider -->
+
+    <link rel="stylesheet" href="assets/vendor/css/slick-theme.css">
+    <link rel="stylesheet" href="assets/vendor/css/slick.css">
+    <!--Custom Styles-->
+    <link rel="stylesheet" href="./assets/css/exchange.css">
+</head>
+
+<body class="">
+    <!-- header -->
+    <header class="add-header">
+        <nav class="container navbar main-nav navbar-expand-lg">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/images/logo.png" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <img src="assets/images/menu.png" alt="">
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav text-center mx-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Market
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"> Trade
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Aboutus
+                        </a>
+                    </li>
+                </ul>
+                <div class="text-center">
+                    <button class="btn primary-btn">Login</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Wallet -->
+    <section class="cal wallet">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="">
+                        <div class="sub-head">
+                            <h2>Total Wallet Amount</h2>
+                        </div>
+                        <div class="row justify-content-center align-items-center">
+                            <div class="col-lg-9">
+                                <div class="wallet-bg">
+                                    <div class="mt-2">
+                                        <h5>₹ 32,4245.00</h5>
+                                    </div>
+                                    <div class="activity mt-2">
+                                        <select class="custom-select" id="inputGroupSelect01">
+                                            <option selected="">INR</option>
+                                            <option value="1">Euro</option>
+                                            <option value="2">Dollar</option>
+                                            <option value="3">Yen</option>
+                                        </select>
+                                    </div>
+                                    <div class="d-flex flex-wrap">
+                                        <div class="btn-grad">
+                                            <a href="#" onclick="openNavdeposit()">
+                                                <img src="assets/images/depopsit.png" alt=""> Deposit
+                                            </a>
+                                        </div>
+                                        <div class="btn-bordr">
+                                            <a href="#" onclick="openNav()">
+                                                <img src="assets/images/withdraw.png" alt=""> Withdraw
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="table-grid">
+                            <div class="grid-box mb-3">
+                                <div class="d-flex flex-wrap">
+                                    <img src="assets/images/eth.png" alt="">
+                                    <div class="h-left">
+                                        <h5>BTC </h5>
+                                        <p class="green">+0.7%</p>
+                                    </div>
+                                </div>
+                                <div class="">
+                                    <h6>Your Balance</h6>
+                                    <h4>1.526 BTC</h4>
+                                </div>
+                                <div class="d-flex flex-wrap">
+                                    <div class="btn-grad">
+                                        <a href="#" onclick="openNavdeposit()">
+                                            <img src="assets/images/depopsit.png" alt=""> Deposit
+                                        </a>
+                                    </div>
+                                    <div class="btn-bordr">
+                                        <a href="#" onclick="openNav()">
+                                            <img src="assets/images/withdraw.png" alt=""> Withdraw
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid-box mb-3">
+                                <div class="d-flex flex-wrap">
+                                    <img src="assets/images/btc.png" alt="">
+                                    <div class="h-left">
+                                        <h5>ETH </h5>
+                                        <p class="green">+0.7%</p>
+                                    </div>
+                                </div>
+                                <div class="">
+                                    <h6>Your Balance</h6>
+                                    <h4>1.526 BTC</h4>
+                                </div>
+                                <div class="d-flex flex-wrap">
+                                    <div class="btn-grad">
+                                        <a href="#">
+                                            <img src="assets/images/depopsit.png" alt=""> Deposit
+                                        </a>
+                                    </div>
+                                    <div class="btn-bordr">
+                                        <a href="#">
+                                            <img src="assets/images/withdraw.png" alt=""> Withdraw
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid-box mb-3">
+                                <div class="d-flex flex-wrap">
+                                    <img src="assets/images/usd.png" alt="">
+                                    <div class="h-left">
+                                        <h5>USDT </h5>
+                                        <p class="green">+0.7%</p>
+                                    </div>
+                                </div>
+                                <div class="">
+                                    <h6>Your Balance</h6>
+                                    <h4>1.526 BTC</h4>
+                                </div>
+                                <div class="d-flex flex-wrap">
+                                    <div class="btn-grad">
+                                        <a href="#">
+                                            <img src="assets/images/depopsit.png" alt=""> Deposit
+                                        </a>
+                                    </div>
+                                    <div class="btn-bordr">
+                                        <a href="#">
+                                            <img src="assets/images/withdraw.png" alt=""> Withdraw
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid-box mb-3">
+                                <div class="d-flex flex-wrap">
+                                    <img src="assets/images/bnbt.png" alt="">
+                                    <div class="h-left">
+                                        <h5>BNB</h5>
+                                        <p class="green">+0.7%</p>
+                                    </div>
+                                </div>
+                                <div class="">
+                                    <h6>Your Balance</h6>
+                                    <h4>1.526 BTC</h4>
+                                </div>
+                                <div class="d-flex flex-wrap">
+                                    <div class="btn-grad">
+                                        <a href="#">
+                                            <img src="assets/images/depopsit.png" alt=""> Deposit
+                                        </a>
+                                    </div>
+                                    <div class="btn-bordr">
+                                        <a href="#">
+                                            <img src="assets/images/withdraw.png" alt=""> Withdraw
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid-box mb-3">
+                                <div class="d-flex flex-wrap">
+                                    <img src="assets/images/usd.png" alt="">
+                                    <div class="h-left">
+                                        <h5>USDC </h5>
+                                        <p class="green">+0.7%</p>
+                                    </div>
+                                </div>
+                                <div class="">
+                                    <h6>Your Balance</h6>
+                                    <h4>1.526 BTC</h4>
+                                </div>
+                                <div class="d-flex flex-wrap">
+                                    <div class="btn-grad">
+                                        <a href="#">
+                                            <img src="assets/images/depopsit.png" alt=""> Deposit
+                                        </a>
+                                    </div>
+                                    <div class="btn-bordr">
+                                        <a href="#">
+                                            <img src="assets/images/withdraw.png" alt=""> Withdraw
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid-box mb-3">
+                                <div class="d-flex flex-wrap">
+                                    <img src="assets/images/xrp.png" alt="">
+                                    <div class="h-left">
+                                        <h5>XRP </h5>
+                                        <p class="green">+0.7%</p>
+                                    </div>
+                                </div>
+                                <div class="">
+                                    <h6>Your Balance</h6>
+                                    <h4>1.526 BTC</h4>
+                                </div>
+                                <div class="d-flex flex-wrap">
+                                    <div class="btn-grad">
+                                        <a href="#">
+                                            <img src="assets/images/depopsit.png" alt=""> Deposit
+                                        </a>
+                                    </div>
+                                    <div class="btn-bordr">
+                                        <a href="#">
+                                            <img src="assets/images/withdraw.png" alt=""> Withdraw
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid-box mb-3">
+                                <div class="d-flex flex-wrap">
+                                    <img src="assets/images/eth.png" alt="">
+                                    <div class="h-left">
+                                        <h5>BTC </h5>
+                                        <p class="green">+0.7%</p>
+                                    </div>
+                                </div>
+                                <div class="">
+                                    <h6>Your Balance</h6>
+                                    <h4>1.526 BTC</h4>
+                                </div>
+                                <div class="d-flex flex-wrap">
+                                    <div class="btn-grad">
+                                        <a href="#" onclick="openNavdeposit()">
+                                            <img src="assets/images/depopsit.png" alt=""> Deposit
+                                        </a>
+                                    </div>
+                                    <div class="btn-bordr">
+                                        <a href="#" onclick="openNav()">
+                                            <img src="assets/images/withdraw.png" alt=""> Withdraw
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid-box mb-3">
+                                <div class="d-flex flex-wrap">
+                                    <img src="assets/images/btc.png" alt="">
+                                    <div class="h-left">
+                                        <h5>ETH </h5>
+                                        <p class="green">+0.7%</p>
+                                    </div>
+                                </div>
+                                <div class="">
+                                    <h6>Your Balance</h6>
+                                    <h4>1.526 BTC</h4>
+                                </div>
+                                <div class="d-flex flex-wrap">
+                                    <div class="btn-grad">
+                                        <a href="#">
+                                            <img src="assets/images/depopsit.png" alt=""> Deposit
+                                        </a>
+                                    </div>
+                                    <div class="btn-bordr">
+                                        <a href="#">
+                                            <img src="assets/images/withdraw.png" alt=""> Withdraw
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid-box mb-3">
+                                <div class="d-flex flex-wrap">
+                                    <img src="assets/images/usd.png" alt="">
+                                    <div class="h-left">
+                                        <h5>USDT </h5>
+                                        <p class="green">+0.7%</p>
+                                    </div>
+                                </div>
+                                <div class="">
+                                    <h6>Your Balance</h6>
+                                    <h4>1.526 BTC</h4>
+                                </div>
+                                <div class="d-flex flex-wrap">
+                                    <div class="btn-grad">
+                                        <a href="#">
+                                            <img src="assets/images/depopsit.png" alt=""> Deposit
+                                        </a>
+                                    </div>
+                                    <div class="btn-bordr">
+                                        <a href="#">
+                                            <img src="assets/images/withdraw.png" alt=""> Withdraw
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- footer -->
+    <footer class="footer-bg">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-lg-4">
+                    <a href="#" class="mb-4 d-block">
+                        <img src="assets/images/footerlogo.png" alt="">
+                    </a>
+                    <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+                        printer took a galley of type</p>
+                    <div class="social">
+                        <a href="#">
+                            <img src="assets/images/facebook.png" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="assets/images/twitter.png" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="assets/images/telegram.png" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="assets/images/insta.png" alt="">
+                        </a>
+                    </div>
+
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <p class="abt">About Us</p>
+                    <div class="about-us">
+                        <a href="#">
+                            About
+                        </a>
+                        <a href="#">
+                            Privacy policy
+                        </a>
+                        <a href="#">
+                            Terms & Condtions
+                        </a>
+                        <a href="#">
+                            Contact us
+                        </a>
+                    </div>
+
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <p class="abt">Services</p>
+                    <div class="about-us">
+                        <a href="#">
+                            Cryptos
+                        </a>
+                        <a href="#">
+                            Buy & Sell
+                        </a>
+                        <a href="#">
+                            FAQ
+                        </a>
+                        <a href="#">Help Center ?
+                        </a>
+                    </div>
+
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <p class="abt">Subscribe Newletter</p>
+                    <form action="" class="news-letter">
+                        <input type="email" class="form-control" placeholder="Enter E- mail  Address">
+                        <div class="mt-4">
+                            <button class="btn primary-btn">Submit</button>
+                        </div>
+                    </form>
+
+
+                </div>
+            </div>
+            <div class="cprtxt">
+                © Copyright 2022 - Exchange
+            </div>
+        </div>
+
+    </footer>
+    <!-- withdraw -->
+    <div id="myNav" class="overlay deposit">
+        <div class="overlay-content">
+            <div class="d-flex justify-content-between align-items-center">
+                <h2>Withdraw</h2>
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><img src="assets/images/x.png"
+                        alt=""></a>
+            </div>
+            <div class="totalbalnce d-flex justify-content-between align-items-center">
+                <h1>₹ 32,4245.00</h1>
+                <div>
+                    <div class="activity mt-2">
+                        <select class="custom-select" id="inputGroupSelect01">
+                            <option selected="">INR</option>
+                            <option value="1">Euro</option>
+                            <option value="2">Dollar</option>
+                            <option value="3">Yen</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="withselect">
+                <div class="activity mt-2">
+                    <select class="custom-select" id="inputGroupSelect01">
+                        <option selected="">Select Bank</option>
+                        <option value="1">Axis</option>
+                        <option value="2">Sbi</option>
+                        <option value="3">INDUSIND</option>
+                    </select>
+                </div>
+            </div>
+            <form action="" class="exchange-form">
+                <div class="form-group">
+                    <input type="text" class="form-control " placeholder="Enter Your Withdraw Amount  ">
+                    <p>$1,000,000.00 daily withdrawal limit.</p>
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control " placeholder="Deposit Fee">
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control " placeholder="Final Amount">
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control " placeholder="Remarks">
+                </div>
+
+                <div class="side-btn">
+                    <button class="btn primary-btn">
+                        Submit
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- deposit -->
+    <div id="myNavdeposit" class="overlay deposit">
+        <div class="overlay-content">
+            <div class="d-flex justify-content-between align-items-center">
+                <h2>Deposit</h2>
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNavdepsoit()"><img src="assets/images/x.png"
+                        alt=""></a>
+            </div>
+            <div class="totalbalnce d-flex justify-content-between align-items-center">
+                <h1>₹ 32,4245.00</h1>
+                <div>
+                    <div class="activity mt-2">
+                        <select class="custom-select" id="inputGroupSelect01">
+                            <option selected="">INR</option>
+                            <option value="1">Euro</option>
+                            <option value="2">Dollar</option>
+                            <option value="3">Yen</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="side-txt">
+                <p>Bank Details</p>
+                <div class="side-bx">
+                    <div class="">
+                        <h4>Account Name : <span>Peter Park</span></h4>
+                    </div>
+                    <div class="">
+                        <h4>Account Number : : <span>150034543543534</span></h4>
+                    </div>
+                    <div class="">
+                        <h4>IFSC Code : <span>KVB432545553</span></h4>
+                    </div>
+                </div>
+            </div>
+            <form action="" class="exchange-form">
+                <div class="form-group">
+                    <input type="text" class="form-control " placeholder="Enter Your  Deposit Amount ">
+                    <p>$1,000,000.00 daily withdrawal limit.</p>
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control " placeholder="Deposit Fee">
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control " placeholder="Final Amount">
+                </div>
+
+                <div class="side-btn">
+                    <button class="btn primary-btn">
+                        Submit
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="" id="bodyoverlay">
+    </div>
+</body>
+<!--Script-->
+<script src="./assets/js/jquery-3.6.0.min.js "></script>
+<script src="./assets/js/bootstrap.bundle.min.js "></script>
+<script src="./assets/js/script.js "></script>
+
+
+
+
+<!-- animationscript -->
+<script src="./assets/vendor/js/gsap.min.js "></script>
+<script src="./assets/vendor/js/ScrollToPlugin.min.js "></script>
+<script src="./assets/vendor/js/ScrollTrigger.min.js "></script>
+<script src="./assets/js/excahnge.js "></script>
+<script src="./assets/vendor/js/slick.min.js"></script>
+
+
+
+</html>
